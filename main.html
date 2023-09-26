@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main{
+            padding: 20px;
+        }
+        .button{
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            
+        }
+        .button:hover{
+            background-color: yellow;
+            color: black;
+            border-radius: 30px;
+        }
+    </style>
+    <title>Document</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="main">
+        <form action="" >
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <br>
+    
+            <label for="phone">Phone Number</label>
+            <input type="number" name="phone" id="phone" placeholder="XXX-XXX-XXXX">
+            <br>
+    
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+            <br>
+    
+            <label for="device">Device</label>
+            <select name="" id="" >
+                <option value="" disabled selected>Select your Device </option>
+                <option value="iphone">iphone</option>
+                <option value="samsunng">Samsung</option>
+                <option value="sony">Sony</option>
+                <option value="oneplus">OnePlus</option>
+            </select>
+            <br>
+            <br>
+    
+            <label for="btn"></label>
+            <input type="button" name="submit" id="btn" value="Submit" class="button">
+            
+        </form>
+    </div>
 </body>
-
 </html>
